@@ -1,0 +1,92 @@
+/*
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
+.example-two {
+  margin-top: 50px;
+  margin-left: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 52px;
+  color: red;
+  position: relative; }
+@keyframes example-two-anim-1 {
+  0% {
+    clip: rect(33px, 714px, 9px, 0); }
+  10% {
+    clip: rect(9px, 714px, 21px, 0); }
+  20% {
+    clip: rect(16px, 714px, 49px, 0); }
+  30.0% {
+    clip: rect(45px, 714px, 50px, 0); }
+  40% {
+    clip: rect(9px, 714px, 7px, 0); }
+  50% {
+    clip: rect(18px, 714px, 16px, 0); }
+  60.0% {
+    clip: rect(6px, 714px, 26px, 0); }
+  70% {
+    clip: rect(40px, 714px, 45px, 0); }
+  80% {
+    clip: rect(30px, 714px, 9px, 0); }
+  90% {
+    clip: rect(40px, 714px, 21px, 0); }
+  100% {
+    clip: rect(32px, 714px, 13px, 0); } }
+@keyframes example-two-anim-2 {
+  0% {
+    clip: rect(2px, 714px, 43px, 0); }
+  10% {
+    clip: rect(5px, 714px, 14px, 0); }
+  20% {
+    clip: rect(31px, 714px, 30px, 0); }
+  30.0% {
+    clip: rect(31px, 714px, 34px, 0); }
+  40% {
+    clip: rect(30px, 714px, 46px, 0); }
+  50% {
+    clip: rect(48px, 714px, 29px, 0); }
+  60.0% {
+    clip: rect(21px, 714px, 49px, 0); }
+  70% {
+    clip: rect(33px, 714px, 43px, 0); }
+  80% {
+    clip: rect(37px, 714px, 23px, 0); }
+  90% {
+    clip: rect(39px, 714px, 29px, 0); }
+  100% {
+    clip: rect(7px, 714px, 6px, 0); } }
+  .example-two:before, .example-two:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    clip: rect(0, 0, 0, 0); }
+  .example-two:after {
+    left: 2px;
+    text-shadow: -1px 0 white;
+    animation: example-two-anim-1 2s infinite linear alternate-reverse; }
+  .example-two:before {
+    left: -2px;
+    text-shadow: 2px 0 green;
+    animation: example-two-anim-2 3s infinite linear alternate-reverse; }
+
+html {
+  background-color: black;
+  margin-left: 80px; }
+
+.wtext {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

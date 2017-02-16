@@ -1,0 +1,16 @@
+
+.spacer {
+    border-bottom: solid;
+    border-color: #666666;
+}
+#barrio {
+    font-family: 'Barrio', cursive;
+}
+#roboto {
+    
+}
+.content {
+    margin: auto;
+    text-align: center;
+    width: 700px;
+}
