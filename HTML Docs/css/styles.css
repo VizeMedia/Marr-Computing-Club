@@ -1,0 +1,45 @@
+.spacer{
+    border-bottom: dotted;
+    border-bottom-color: gray;
+}
+#ws11{
+  text-align: center;
+  opacity: 0;
+  width: 430px;
+  margin: auto;
+  font-size: 11px;
+  animation-name: fadeInDown;
+  animation-duration: .75s;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+.footer{
+  position: relative;
+}
+img{
+    border: solid;
+    border-color: gray;
+    transition: 3s;
+}
+img:hover{
+    border-color: royalblue;
+    transition: 3s;
+}
+#stop{
+    color: darkred;
+    transition: 0.5s;
+}
+#stop:hover{
+    color: red;
+    transition: 0.5s;
+}
